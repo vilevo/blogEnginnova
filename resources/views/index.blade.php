@@ -38,7 +38,7 @@
                     @foreach($blogs as $blog)
                     <article class="blog_item">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://enginnova.s3-us-west-2.amazonaws.com/<?php echo $blog->photo; ?>" alt="" />
+                            <img class="card-img rounded-0" src="{{asset('blog_assets/img/blog/single_blog_2.png')}}" alt="" />
                             <a href="#" class="blog_item_date">
                                 <h3>{{date('d',strtotime($blog->created_at))}}</h3>
                                 <p>{{date('F',strtotime($blog->created_at))}}</p>
@@ -75,7 +75,7 @@
                         <h3 class="widget_title">Articles popualires</h3>
                         @foreach($autres_blogs as $autre_blog)
                         <div class="media post_item">
-                            <img src="https://enginnova.s3-us-west-2.amazonaws.com/{{$blog->photo}}" alt="post" />
+                            <img src="{{asset('blog_assets/img/post/post_1.png')}}" alt="post" />
                             <div class="media-body">
                                 <a href="single-blog.html">
                                     <h3>{{$autre_blog->titre}}</h3>
